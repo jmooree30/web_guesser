@@ -1,8 +1,12 @@
 <html>
-  <head></head>
-    <body>
-    <p>
-"The secret number is <%= number %>"
-    </p>
-  </body>
+<head></head>
+<body>
+<form>
+  <input type='text' name='guess' />
+  <input type='submit' value='Guess!' />
+</form>
+<p>
+    <%= check_guess  %>
+</p>
+</body>
 </html>
