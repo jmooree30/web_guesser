@@ -1,28 +1,31 @@
 <html>
-  <style>
- body {
-    background: <%= color %>;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-  }
+<style>
+body {
+  background: <%= color %>;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
 </style>
- <head>
-  Web Guesser: can you guess the random number? Winner gets a free deep breadth first search ;)
+<head>
+  Web Guesser: can you guess the random number 0-100? Winner gets a free deep breadth first search ;)
 </head>
 <body>
   <form>
     <input type='text' name='guess' />
     <input type='submit' value='Guess!' />
-  </form>
-  <p>
+ </form>
+ <p>
     <%= check_guess  %>
-  </p>
-  <p>
+ </p>
+ <p>
    Tries left: <%= @@counter %>
-  </p>
-   <p>
-      <%= try_again %>
-  </p>
+</p>
+<p>
+  <%= try_again %>
+</p>
+<p>
+  <%= @@cheater %>
+</p>
 </body>
 </html>
