@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloader'
+#require 'sinatra/reloader'
  
 color_var = '#0000FF'
 @@number = rand(100)
